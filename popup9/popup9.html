@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Popup9</title>
+  <link rel="stylesheet" type="text/css" href="filecss\popup9.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content" style="height: 250px;">
+      <div class="step1" style="padding-bottom: 16px;">
+        <h2>Удаление всех номеров <br>из чёрного списка</h2>
+        <div class="close-btn" onclick="togglepopup1()">&times;</div>
+      </div>
+      <p>Вы уверены, что хотите удалить все <br>номера из чёрного списка? </p>
+      <div class="step4">
+        <a href="#" onclick="togglepopup1()" class="btn2"><button>Отмена</button></a>
+        <a href="#" class="btn2"><button style="background: #C64139;color: white;">Удалить</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-2">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="step1">
+        <h2>Добавление номеров в стоп-лист</h2>
+        <div class="close-btn" onclick="togglepopup2()">&times;</div>
+      </div>
+      <div>
+        <label>Номера получателей</label>
+        <div class="step3">
+          <a class="btn1"><button>Буфер обмена</button></a>
+          <a class="btn1"><button>Ручной ввод</button></a>
+          <a class="btn1"><button>Файл базы</button></a>
+        </div>
+      </div>
+      <form>
+        <label>Введите номер телефона:</label>
+        <div class="step5">
+          <input type="tel" placeholder="+380997826410">
+          <a href="#" class="btn4"><button>Удалить</button></a>
+        </div>
+      </form>
+      <a href="#" class="btn3"><button><img src="Filefoto\plus.svg" />
+          Добавить номер телефона
+        </button></a>
+      <div class="step4">
+        <a href="#" onclick="togglepopup1()" class="btn2"><button>Отмена</button></a>
+        <a href="#" class="btn2"><button style="background: #5D3AEF;color: white;">Добавить</button></a>
+      </div>
+    </div>
+  </div>
+  <button onclick="togglepopup1()"><a href="#">Удаление всех номеров из чёрного списка</a></button> <br>
+  <button onclick="togglepopup2()"><a href="#">Добавление номеров в стоп-лист</a></button>
+
+
+</body>
+<script src="FileJs\popup9.js"></script>
+
+</html>
